@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1068544851272",
+    "firebase_url": "https://guadityapp-46c87-default-rtdb.firebaseio.com",
+    "project_id": "guadityapp-46c87",
+    "storage_bucket": "guadityapp-46c87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068544851272:android:adf4a05101fe63d59e877d",
+        "android_client_info": {
+          "package_name": "com.example.guadity_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068544851272-6809ved951s04tlsbutrdso294q5ii9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGVYI3tGb9-VAg3yQ6v764CyzqxHcMDWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068544851272-6809ved951s04tlsbutrdso294q5ii9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

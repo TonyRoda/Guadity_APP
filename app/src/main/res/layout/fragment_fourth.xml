@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FourthFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/fondo_inicio"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUARDITY"
+            android:textColor="@color/celeste"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soporte"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preguntas Frecuentes y Soporte"
+            android:textColor="@color/azul"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué es Guardity?"
+            android:textSize="18sp"
+            android:textColor="@color/celeste"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es una aplicación de rastreo de dispositivos móviles"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo funciona Guardity?"
+            android:textSize="18sp"
+            android:textColor="@color/celeste"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es un servicio freemium que consta de un agente en tus dispositivos y un servicio web que maneja la información que recopila por ti. Podrás administrar la aplicación desde tu cuenta Guardity siempre que tu dispositivo se conecte con nuestros servidores"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingStart="30sp"
+            android:paddingEnd="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/celeste"
+                android:src="@drawable/mensaje_ic"
+                android:id="@+id/contacto"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
