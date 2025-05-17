@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_degradado"
@@ -10,92 +10,94 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/fondo_inicio"/>
+        android:background="@drawable/fondo_inicio" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/perfil_usuario"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@drawable/icon_usuario"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="40dp"/>
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp">
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-                <TextView
-                    android:id="@+id/nombre_usuario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Nombre del usuario"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/correo_usuario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Correo del usuario"
-                    android:textSize="12sp"
-                    android:textColor="@color/gris"
-                    android:gravity="center"
-                    android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/nombre_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nombre del usuario"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="40dp" />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/correo_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Correo del usuario"
+                android:textColor="@color/gris"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="211dp"
+                tools:layout_editor_absoluteY="56dp" />
 
             <TextView
                 android:id="@+id/plan_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FREE"
-                android:textSize="18sp"
-                android:textColor="@color/celeste"
+                android:background="@drawable/borde_plan"
                 android:gravity="center"
+                android:text="FREE"
+                android:textColor="@color/celeste"
+                android:textSize="18sp"
                 android:textStyle="italic"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/borde_plan" />
-        </LinearLayout>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingTop="15dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dispositivos Registrados"
-                android:textSize="18sp"
                 android:layout_marginStart="55dp"
-                android:textColor="@color/white"/>
+                android:text="Dispositivos Registrados"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/ver_todos"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:text="Ver todos"
                 android:layout_marginStart="10dp"
-                android:textColor="@color/azul"
-                android:backgroundTint="@color/white"/>
+                android:backgroundTint="@color/white"
+                android:text="Ver todos"
+                android:textColor="@color/azul" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/transparent"/>
+            android:background="@color/transparent" />
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -104,8 +106,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="300dp"
@@ -113,66 +115,77 @@
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
                     app:strokeWidth="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_dispositivo_1"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:background="@drawable/img_cel"
-                            android:scaleType="centerCrop"
-                            android:elevation="50dp"/>
+                            android:elevation="50dp"
+                            android:scaleType="centerCrop" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginStart="10dp">
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
                             <TextView
                                 android:id="@+id/Nombre_dispositivo_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
                                 android:text="SAMSUNG GALAXY A55 5G"
                                 android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="40dp"/>
+                                android:textStyle="bold" />
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Modelo:"/>
+                                    android:text="Modelo:" />
+
                                 <TextView
                                     android:id="@+id/Modelo_dispositivo_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Samsung A55 5G"/>
+                                    android:text="Samsung A55 5G" />
                             </LinearLayout>
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pais:"/>
+                                    android:text="Pais:" />
+
                                 <TextView
                                     android:id="@+id/Pais_Ubicacion_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Peru,PE(PER)"/>
+                                    android:text="Peru,PE(PER)" />
                             </LinearLayout>
                         </LinearLayout>
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:background="@drawable/pin_ubi"
-                            android:layout_marginTop="110dp"/>
+                            android:layout_marginTop="110dp"
+                            android:background="@drawable/pin_ubi" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -188,70 +201,81 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="300dp"
                     android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
-                    android:layout_marginTop="20dp"
                     app:strokeWidth="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_dispositivo_2"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:background="@drawable/img_cel"
-                            android:scaleType="centerCrop"
-                            android:elevation="50dp"/>
+                            android:elevation="50dp"
+                            android:scaleType="centerCrop" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginStart="10dp">
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
                             <TextView
                                 android:id="@+id/Nombre_dispositivo_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
                                 android:text="SAMSUNG GALAXY A55 5G"
                                 android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="40dp"/>
+                                android:textStyle="bold" />
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Modelo:"/>
+                                    android:text="Modelo:" />
+
                                 <TextView
                                     android:id="@+id/Modelo_dispositivo_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Samsung A55 5G"/>
+                                    android:text="Samsung A55 5G" />
                             </LinearLayout>
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pais:"/>
+                                    android:text="Pais:" />
+
                                 <TextView
                                     android:id="@+id/Pais_Ubicacion_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Peru,PE(PER)"/>
+                                    android:text="Peru,PE(PER)" />
                             </LinearLayout>
                         </LinearLayout>
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:background="@drawable/pin_ubi"
-                            android:layout_marginTop="110dp"/>
+                            android:layout_marginTop="110dp"
+                            android:background="@drawable/pin_ubi" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -260,70 +284,81 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="300dp"
                     android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
-                    android:layout_marginTop="20dp"
                     app:strokeWidth="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_dispositivo_3"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:background="@drawable/img_cel"
-                            android:scaleType="centerCrop"
-                            android:elevation="50dp"/>
+                            android:elevation="50dp"
+                            android:scaleType="centerCrop" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginStart="10dp">
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
                             <TextView
                                 android:id="@+id/Nombre_dispositivo_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
                                 android:text="SAMSUNG GALAXY A55 5G"
                                 android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="40dp"/>
+                                android:textStyle="bold" />
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Modelo:"/>
+                                    android:text="Modelo:" />
+
                                 <TextView
                                     android:id="@+id/Modelo_dispositivo_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Samsung A55 5G"/>
+                                    android:text="Samsung A55 5G" />
                             </LinearLayout>
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pais:"/>
+                                    android:text="Pais:" />
+
                                 <TextView
                                     android:id="@+id/Pais_Ubicacion_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Peru,PE(PER)"/>
+                                    android:text="Peru,PE(PER)" />
                             </LinearLayout>
                         </LinearLayout>
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:background="@drawable/pin_ubi"
-                            android:layout_marginTop="110dp"/>
+                            android:layout_marginTop="110dp"
+                            android:background="@drawable/pin_ubi" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -331,74 +366,85 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="300dp"
                     android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
-                    android:layout_marginTop="20dp"
-                    app:strokeWidth="0dp" >
+                    app:strokeWidth="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_dispositivo_4"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:background="@drawable/img_cel"
-                            android:scaleType="centerCrop"
-                            android:elevation="50dp"/>
+                            android:elevation="50dp"
+                            android:scaleType="centerCrop" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginStart="10dp">
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
                             <TextView
                                 android:id="@+id/Nombre_dispositivo_4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
                                 android:text="SAMSUNG GALAXY A55 5G"
                                 android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="40dp"/>
+                                android:textStyle="bold" />
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Modelo:"/>
+                                    android:text="Modelo:" />
+
                                 <TextView
                                     android:id="@+id/Modelo_dispositivo_4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Samsung A55 5G"/>
+                                    android:text="Samsung A55 5G" />
                             </LinearLayout>
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pais:"/>
+                                    android:text="Pais:" />
+
                                 <TextView
                                     android:id="@+id/Pais_Ubicacion_4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Peru,PE(PER)"/>
+                                    android:text="Peru,PE(PER)" />
                             </LinearLayout>
                         </LinearLayout>
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:background="@drawable/pin_ubi"
-                            android:layout_marginTop="110dp"/>
+                            android:layout_marginTop="110dp"
+                            android:background="@drawable/pin_ubi" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,7 +49,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
-    implementation(files("E:\\cursos 2021-2\\cursos2024-1\\Desarrollo_Aplicaciones_moviles\\api\\lib\\commons-codec-1.11.jar"))
+    implementation(files("E:\\Guardity"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
