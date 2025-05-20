@@ -120,16 +120,46 @@
                         android:layout_width="180dp"
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/Nombre_dispositivo_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="40dp"
+                            android:layout_marginTop="10dp"
                             android:text="SAMSUNG GALAXY A55 5G"
+                            android:textColor="@color/azul"
                             android:textSize="14sp"
                             android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="6dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="20dp"
+                                android:text="modelo"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/azul"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                            <LinearLayout
+                                android:layout_width="180dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="-1dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="180dp"
+                                    android:layout_height="20dp"
+                                    android:text="Pais"
+                                    android:textColor="@color/azul"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
