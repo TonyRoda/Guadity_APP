@@ -101,6 +101,15 @@
                 android:text="Es un servicio freemium que consta de un agente en tus dispositivos y un servicio web que maneja la información que recopila por ti. Podrás administrar la aplicación desde tu cuenta Guardity siempre que tu dispositivo se conecte con nuestros servidores"
                 android:textStyle="bold" />
 
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="54dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/mensaje_ic" />
+
         </LinearLayout>
 
     </LinearLayout>
