@@ -37,13 +37,13 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_first, container, false)
-        nombreUsuario = view.findViewById(R.id.nombre_usuario)
-        correoUsuario = view.findViewById(R.id.correo_usuario)
-        loadUserData()
+       // nombreUsuario = view.findViewById(R.id.nombre_usuario)
+        //correoUsuario = view.findViewById(R.id.correo_usuario)
+       // loadUserData()
 
         return view
     }
-
+/*
     public fun equipos()
     {
         //StringBuilder sb = new StringBuilder();
@@ -68,7 +68,7 @@ class FirstFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
+    }*/
 
     /*private fun mostrarDialogAgregarEquipo() {
         val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_agregar_equipo, null)

@@ -39,10 +39,6 @@ class ScreenPrincipal : AppCompatActivity() {
                     loadFragment(secondFragment)
                     true
                 }
-                R.id.thirdFragment -> {
-                    loadFragment(thirdFragment)
-                    true
-                }
                 R.id.fourthFragment -> {
                     loadFragment(fourthFragment)
                     true

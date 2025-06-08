@@ -49,7 +49,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
-    implementation(files("E:\\cursos 2021-2\\cursos2024-1\\Desarrollo_Aplicaciones_moviles\\api\\lib\\commons-codec-1.11.jar"))
+    implementation(files("E:\\Guardity"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -63,4 +63,8 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation(kotlin("script-runtime"))
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation ("com.google.android.material:material:1.14.0-alpha01")
+
+
 }
