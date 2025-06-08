@@ -10,24 +10,38 @@
         android:id="@+id/fondoencabezado"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@drawable/fondo_inicio" />
+        android:background="@drawable/fondo_inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Configuración"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="79dp" />
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cerrar sesion"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="568dp" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Guardity"
+            android:textColor="@color/celeste"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="0dp"
+            android:text="Configuración"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
