@@ -170,6 +170,19 @@
                 android:text="© 2025"
                 android:textStyle="bold"
                 android:layout_marginTop="2dp" />
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="end"
+                android:text="Cerrar sesión"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/azul"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 
